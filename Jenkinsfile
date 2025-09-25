@@ -17,7 +17,7 @@ pipeline{
     stages{
         stage('checking'){
             steps{
-                git branch:'master', url:'https://github.com/jarmoil/otp1_week6_temp.git'
+                git branch:'main', url:'https://github.com/jarmoil/otp1_week6_temp.git'
             }
         }
 
