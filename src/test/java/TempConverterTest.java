@@ -5,7 +5,7 @@ public class TempConverterTest {
 
     @Test
     public void testFahrenheitToCelsius() {
-        TemperatureConverter converter = new TemperatureConverter();
+        TempConverter converter = new TempConverter();
 
         // Test normal case
         assertEquals(0.0, converter.fahrenheitToCelsius(32.0), 0.0);
@@ -19,7 +19,7 @@ public class TempConverterTest {
 
     @Test
     public void testCelsiusToFahrenheit() {
-        TemperatureConverter converter = new TemperatureConverter();
+        TempConverter converter = new TempConverter();
 
         // Test normal case
         assertEquals(32.0, converter.celsiusToFahrenheit(0.0), 0.0);
@@ -33,7 +33,7 @@ public class TempConverterTest {
 
     @Test
     public void testKelvinToCelsius() {
-        TemperatureConverter converter = new TemperatureConverter();
+        TempConverter converter = new TempConverter();
 
         // Test normal case
         assertEquals(0.0, converter.kelvinToCelsius(273.15), 0.0);
@@ -47,7 +47,7 @@ public class TempConverterTest {
 
     @Test
     public void testExtremeTemperatureHandling() {
-        TemperatureConverter converter = new TemperatureConverter();
+        TempConverter converter = new TempConverter();
 
         // Ensure extreme temperature checking is correct
         assertTrue(converter.isExtremeTemperature(-50.0));
@@ -58,7 +58,7 @@ public class TempConverterTest {
 
     @Test
     public void testOverallConversionAccuracy() {
-        TemperatureConverter converter = new TemperatureConverter();
+        TempConverter converter = new TempConverter();
 
         // Test a series of conversions to ensure accuracy
         double fahrenheit = 100.0;
